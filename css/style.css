@@ -1,3 +1,13 @@
-body {
 
+
+
+.jumbotron {
+
+background-color: black;
+
+}
+
+.navbar-brand, h1, #kontakt {
+
+font-family: 'Shojumaru', cursive;
 }
