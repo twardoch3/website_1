@@ -1,5 +1,24 @@
 {% block content %}
 
+   <div class="container">
+      <div class="row">
+        <!-- Latest Posts -->
+        <main class="post blog-post col-lg-8">
+          <div class="container">
+            <div class="post-single" id="post-beginning">
+              {% comment %}
+              <div class="post-thumbnail"><img src="{% static 'img/x' %}" alt="..." class="img-fluid"></div>
+              <!-- obrazek pasuje czy nie??  -->
+              {% endcomment %}
+              <div class="post-details" >
+                <div class="post-meta d-flex justify-content-between">
+
+                  <div class="category" >
+                    {% for cat in post.categories.all %}
+                    <a>{{ cat.title }}</a>
+                    {% endfor %}
+                  </div>
+
 
 <!-- Formularz Oceny -->
                 <form action="#" method="post" id="vote">
