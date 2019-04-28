@@ -18,6 +18,13 @@
                     <a>{{ cat.title }}</a>
                     {% endfor %}
                   </div>
+                   {% if request.user.is_staff %}
+                  <div>
+                    <a href="{% url 'post-update' id=post.id %}">Update</a>
+                    <a href="#">Delete</a>
+                    <!-- {% url 'post-delete' id=post.id %} -->
+                  </div>
+                  {% endif %}
 
 
 <!-- Formularz Oceny -->
