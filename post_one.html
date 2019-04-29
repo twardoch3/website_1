@@ -37,6 +37,15 @@
                     <div class="comments meta-last"><i class="icon-comment"></i>{{ post.comment_count }}</div>
                   </div>
                 </div>
+                <div class="post-body">
+                  <p>{{ post.content |safe }}</p>
+                  <!-- moze tu jakis obrazek albo chociaz pasek??
+                  <img src="{% static 'img/flag-7.jpg' %}" alt="..." class="img-fluid"> -->
+                </div>
+                <!-- buttony facebook twitter linkedin   -->
+                <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fsystemwkryzysie.blox.pl&layout=button_count&size=small&width=68&height=20&appId" width="68" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                <a href="https://twitter.com/intent/tweet?button_hashtag=system&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #systemwkryzysie</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 
 <!-- Formularz Oceny -->
